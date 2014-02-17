@@ -1,0 +1,854 @@
+
+body {
+	font-family: calibri;
+}
+
+a {
+	background-color: rgb(228,105,56);
+	color: white;
+	cursor: pointer;
+	font-size: 27px;
+	padding: 10px 20px;
+	text-decoration: none;
+}
+
+a:hover {
+	background: rgb(231, 90, 34);
+}
+
+ul {
+	list-style: none;
+	padding-left: 0px;
+}
+
+.leftitem {
+    width: 38%;
+	margin-left: 17px;
+	text-align: right;
+	margin-top: 3px;
+	font-size: 18px;
+}
+.rightitem {
+    width: 40%;
+    margin-left: 12px;
+	margin-bottom: 17px;
+}
+
+.rightitem input {
+	font-size: 16px;
+	width: 47px;
+}
+
+input:hover {
+	box-shadow: 0px 0px 1px 0px gray;
+}
+
+.highcharts-container {
+	box-shadow: 1px 2px 9px 0px #888888;
+}
+
+
+/*
+    SIDE NAVIGATION SPECIFIC STYLES
+*/
+.logo   {
+    position:relative;
+    width:100%;
+    z-index:2;
+}
+
+.sidebarart {
+    width:100%;
+    position:absolute;
+    top:0px;
+    height:100%;
+    z-index: 0;
+}
+
+.sidebar {
+	display: inline-block;
+	height: 100%;
+	width: 250px;
+	position: fixed;
+	top: 0px;
+	left: 0px;
+    z-index:1;
+    
+}
+
+.sidebar nav {
+    position:relative;
+    z-index:1;
+}
+
+.sidebar li {
+	background-color: rgb(56,87,35);
+	color: white;
+	cursor: pointer;	
+	display: inline-block;
+	font-size: 25px;
+	padding: 15px 0px;
+	text-align: center;
+	width: 100%;
+}
+
+.sidebar li:hover {
+	background: rgb(44, 65, 30);
+}
+
+.sidebar li.selected {
+	background-color: rgb(228,105,56);
+}
+
+.sidebar a {
+	background-color: transparent;
+	width: 100%;
+}
+
+/*
+    PAGE SECTION
+*/
+.cornerart img{
+    
+    position: fixed;
+    z-index:-1;
+    top:-10px;
+    right:0px;
+}
+
+.content {
+    margin-top: 60px;
+    margin-bottom: 45px;
+    margin-left: 15%;
+    width: 100%;
+}
+
+.page-overview {
+	display: none;
+	left: 210px;
+	margin-left: 75px;
+	position: absolute;
+	top: 0px;
+}
+
+.page-overview.selected {
+	display: inline-block;
+}
+
+.title {
+	border-bottom: 1px solid rgb(228,105,56);
+	display: inline-block;
+	margin-bottom: 20px;
+	margin-top: 100px;
+	width: 450px;
+}
+
+.title h1 {
+	font-size: 54px;
+	margin: 0px;
+}
+
+.graph {
+	margin: 30px 0px;
+}
+
+form {
+	display: inline-block;
+}
+
+
+/*
+OVERVIEW PAGE-SPECIFIC STYLES
+*/
+
+.overview-section {
+	margin-left: 160px;
+	margin-top: 60px;
+}
+
+.overview-buttons a:first-child {
+	margin-right: 91px;
+}
+
+.overview .graph {
+    margin-bottom: 45px;
+} 
+
+
+
+/*
+GOALS PAGE-SPECIFIC STYLES
+*/
+
+#mygoals-currentGraph
+{
+	width: 300px;
+	height: 300px;
+}
+
+#mygoals-historyGraph
+{
+	width: 300px;
+	height: 300px;
+}
+
+.goal-graph-container {
+	margin-left: 160px;
+	margin-top: 30px;
+	width: 864px;
+}
+
+.goal-graph-container div {
+	display: inline-block;
+	vertical-align: top;
+}
+
+.goal-graph-container .graph {
+	width: 45%;
+}
+
+.goal-graph-container .input-graph {
+	margin-top: 30px;
+	margin-left: 100px;
+	width: 150px;
+	position: relative;
+}
+
+.goal-graph-container form {
+	margin-top: 12px;
+	vertical-align: top;
+	width: 100%;
+}
+
+.goal-graph-container .other-page#shoppinglist {
+	display: inline-block;
+	position: absolute;
+	left: 718px;
+	top: 562px
+}
+
+.goal-graph-container .input-graph img {
+	margin-left: 10px;
+}
+
+.goal-graph-container .input-graph a {
+	margin-left: 35px;
+}
+	
+.goal-history-container {
+    width: 864px;
+	margin-top: 65px;
+	margin-left: 160px;
+}
+
+.goal-history-container div {
+	display: inline-block;
+	margin-right: -4px;
+	width: 216px;
+}
+
+.goal-history-container div li {
+	background-color: rgb(56,87,35);
+	border-top: 1px solid rgb(216,231,208);
+	color: white;
+	cursor: pointer;	
+	display: inline-block;
+	font-size: 27px;
+	padding: 5px 0px;
+	text-align: center;
+	width: 100%;
+}
+
+.goal-history-container div li:hover {
+	background: rgb(44, 65, 30);
+}
+
+.goal-history-container div li:nth-child(1) {
+	background-color: rgb(228,105,56);
+}
+
+.goal-history-container div li:nth-child(1):hover {
+	background-color: rgb(228,105,56);
+}
+
+.goal-history-container div li a {
+	background: transparent;
+}
+
+
+
+/*
+	SHOPPING LIST SPECIFIC STYLES
+*/
+
+.shoppinglist section {
+	margin: 60px 0 0 160px;
+	width: 700px;
+}
+
+.food-group {
+	background: rgb(155,209,130);
+	margin-bottom: 20px;
+}
+
+.food-group div h2 {
+	display: inline-block;
+	margin: 3px 0px 3px 7px;
+}
+
+.food-group > div span {
+	float: right;
+	position: relative;
+	top: 4px;
+	font-size: 24px;
+	font-weight: bold;
+	right: 15px;
+}
+
+
+.foods {
+	margin-top: 0px;
+}
+
+.foods li {
+	background-color: rgb(56,87,35);
+	color: white;
+	cursor: pointer;
+	font-weight: normal;
+	margin-top: 2px;
+}
+
+.foods li:hover {
+	background: rgb(44, 65, 30);
+}
+
+.foods li input {
+	font-size: 18px;
+	width: 32px;
+	margin-left: 7px;
+}
+
+.foods li h3 {
+	display: inline-block;
+	font-size: 20px;
+	font-weight: normal;
+	margin: 8px 0px;
+}
+
+.foods .quantity {
+	
+	font-size: 20px;
+	position: relative;
+	float: right;
+	right: 6px;
+	top: 5px;
+}
+
+.foods li div span:last-child {
+	background-color: white;
+	color: black;
+	padding: 3px 10px;
+	position: relative;
+	top: 2px;
+}
+
+
+section.add-more-foods {
+	margin-top: 20px;
+}
+
+
+.add-more-foods > h1 {
+	background: rgb(155,209,130);
+	padding: 6px 8px;
+	font-size: 24px;
+	margin: 0 0 13px 0;	
+}
+
+.add-more-foods input {
+	font-size: 24px;
+	width: 564px;
+	margin-right: 20px;
+	height: 52px;
+}
+
+.add-more-foods a {
+	position: relative;
+	top: 1px;
+}
+
+.shopping-results {
+	display: none;
+}
+
+.searched-food input {
+	width: auto;
+	height: auto;
+}
+
+.searched-food .quantity span:last-child {
+	margin-left: 5px;
+}
+
+.shoppinglist #mycupboard {
+	position: relative;
+	left: 160px;
+	top: 24px;
+	margin-bottom: 20px;
+}
+
+.quantityInput
+{
+	width: 20px;
+	border: none;
+}
+
+/*
+    MY CUPBOARD SPECIFIC STYLES
+*/
+
+.mycupboard .title {
+	display: block;
+}
+
+.recipes-foods-menu {
+	margin-left: 160px;
+}
+
+.recipes-foods-menu h2 {
+	cursor: pointer;
+	display: inline-block;
+}
+
+.recipes-foods-menu h2.selected {
+	border-bottom: 1px solid rgb(228,105,56);
+}
+
+.recipes-foods-menu .my-cupboard-foods {
+	margin-left: 30px;
+}
+
+.recipe-ratingstar
+{
+	width: 40px;
+	height: 40px;
+	cursor: hand;
+}
+
+
+.cupboard-foods, .cupboard-recipes {
+	display: inline-block;
+	margin-left: 160px;
+	vertical-align: top;
+}
+
+.cupboard-recipes {
+	width: 872px;
+}
+
+.cupboard-foods {
+	display: none;
+	width: 400px;
+}
+
+.cupboard-recipes .recipe-rating {
+	float: right;
+	bottom: 30px;
+	position: relative;
+	margin-left: 100px;
+	margin-right: 10px;
+}
+
+.cupboard-recipes .quantity {
+	font-size: 20px;
+	position: relative;
+	float: right;
+	right: 6px;
+	top: 5px;
+	bottom: 34px;
+}
+
+.cupboard-recipes .foods li {
+	background: white;
+	color: black;
+	box-shadow: 2px 2px 5px 1px #666666;
+	display: inline-block;
+	margin-bottom: 40px;
+	margin-right: 40px;
+	width: 250px;
+}
+
+.cupboard-recipes .foods li  h3{
+	text-align: center;
+	width: 100%;
+}
+
+.cupboard-recipes .foods li  .prep-time {
+	font-size: 18px;
+	margin-left: 24px;
+}
+
+.cupboard-recipes .foods li  .rating { 
+	background: transparent;
+	float: right;
+	margin-right: 20px;
+}
+
+.cupboard-foods .foods li h3 {
+	margin-left: 20px;
+}
+
+.cupboard-foods .foods li .quantity span{
+	background: transparent;
+	color: white;
+}
+
+.cupboard-ratingstar
+{
+	margin-top: -5px;
+	width: 20px;
+	height: 20px;
+	cursor: hand;
+}
+
+/*
+    SETTINGS SPECIFIC STYLE
+*/
+
+.food-pref-ul li{
+    display:inline-block;
+    width: 25%;
+    margin-bottom: 15px;
+}
+.food-pref-ul label {
+	display: inline-block;
+}
+.food-pref-ul{
+    margin-left: 75px;
+	height: 200px;
+	width: 60%;
+}
+
+
+.personal-info-ul li{
+    display:inline-block;
+    width: 40%;
+    margin-bottom: 15px;
+}
+
+.personal-info-ul{
+    margin-left: 68px;
+	width: 50%;
+}
+
+.personal-info-ul .leftitem {
+	width: 50px;
+	display: inline-block;
+}
+
+.personal-info-ul .rightitem {
+	width: 120px;
+	display: inline-block;
+}
+
+.personal-info-ul .rightitem input {
+	width: 120px;
+}
+
+
+/*Suggest MEAL STYLES*/
+
+.suggestmeal h2 {
+	font-size: 40px;
+	left: 62px;
+	position: relative;
+}
+
+.suggestmeal .meals {
+	left: 100px;
+	position: relative;
+}
+
+.suggest-buttons {
+	margin: 60px 0px 60px 160px;
+}
+	
+.suggest-buttons a {
+	
+	margin-right: 20px;
+	padding: 10px 11px;
+}	
+
+.image-slider {
+	margin-top: 100px;
+}
+
+.image-slider h3 {
+	display: inline-block;
+	bottom: 225px;
+	margin-left: 150px;
+	position: relative;
+	width: 100px;
+}
+
+.suggestmeal-imageContainer
+{
+	display: inline;
+}
+
+.suggestmeal-preptime
+{
+	display: inline-block;
+	position: relative;
+	top: -186px;
+	right: 52px;
+	background-color: black;
+	color: white;
+	text-align: center;
+
+	width: 48px;
+	margin-right: -51px;
+}
+
+.suggestmeal-rating
+{
+	display: inline-block;
+	position: relative;
+	top: 0px;
+	right: 157px;
+	background-color: black;
+	text-align: center;
+
+	width: 110px;
+	height: 20px;
+	margin-right: -112px;
+}
+
+.suggestmeal-ratingstar
+{
+	width: 20px;
+	height: 20px;
+	cursor: hand;
+}
+
+.suggestmeal-recipe-name
+{
+	display: inline-block;
+	position: relative;
+	top: 30px;
+	font-size: 150%;
+	width: 400px;
+	right: -93px;
+	margin-left: -400px;
+	margin-bottom: -50px;
+	text-align: center;
+}
+
+.arrow {
+	display: inline-block;
+	height: 0px;
+	width: 0px;
+	border-top: 40px solid transparent;
+	border-bottom: 40px solid transparent;
+	padding: 0px;
+	bottom: 60px;
+	position: relative;
+	cursor: hand;
+}
+
+.arrow.right {
+	border-left: 60px solid rgb(228,105,56);
+	margin-left: 16px;
+}
+
+.arrow.right:hover {
+	border-left: 60px solid rgb(231, 90, 34);
+}
+
+.arrow.left {
+	border-right: 60px solid rgb(228,105,56);
+	margin-right: 20px;
+}
+
+.arrow.left:hover {
+	border-right: 60px solid rgb(231, 90, 34);
+}
+
+.suggestmealImage
+{
+	height: 200px;
+	width: 200px;
+	box-shadow: 1px 2px 9px 4px #666666;
+	cursor: pointer;
+}
+
+.suggestmealImage:hover
+{
+	box-shadow: 1px 2px 3px 0px black;
+}
+
+
+/*
+	ENTER FOOD EATEN STYLES
+*/
+
+.foodeaten section {
+	margin-left: 160px;
+	margin-top: 60px;
+}
+
+.foodeaten .food-eaten input {
+	font-size: 24px;
+	width: 564px;
+	margin-right: 20px;
+	height: 52px;
+}
+
+.foodeaten .food-eaten a {
+	position: relative;
+	top: 3px;
+}
+
+.foodeaten #entered-food li {
+	background-color: rgb(56,87,35);
+	color: white;
+	cursor: pointer;
+	font-weight: normal;
+	margin-top: 2px;
+}
+
+.foodeaten #entered-food li  div > input  {
+	margin-left: 7px;
+	margin-right: 20px;
+}
+
+.foodeaten #entered-food li h3 {
+	display: inline-block;
+	font-size: 20px;
+	font-weight: normal;
+	margin: 8px 0px;
+}
+
+.foodeaten #entered-food li .quantity {
+	font-size: 20px;
+	position: relative;
+	float: right;
+	right: 6px;
+	top: 3px;
+}
+
+.foodeaten #entered-food li .quantity span:first-child {
+	margin-right: 10px;
+}
+
+.foodeaten #entered-food li .quantity input {
+	width: 40px;
+	font-size: 20px;
+}
+
+/*
+	VIEW RECIPE STYLES
+*/
+
+.viewrecipe .viewrecipe-recipe {
+	margin-top: 60px;
+	margin-left: 160px;
+	width: 660px;
+}
+
+.viewrecipe-title {
+	display: inline-block;
+	vertical-align: top;
+	width: 400px;
+}
+
+.viewrecipe-title h2{
+	font-size: 40px;
+}
+
+.viewrecipe-title h3{
+	font-size: 20px;
+}
+
+.viewrecipe-image {
+	display: inline-block;
+}
+
+.viewrecipe .ingredient {
+	display: inline-block;
+	margin-right: 70px;
+}
+
+.viewrecipe .ingredients  {
+	font-size: 20px;
+}
+
+.viewrecipe-ingredients h3, .viewrecipe-directions h3 {
+	margin-bottom: 0px;
+}
+
+.viewrecipe-ingredients ul, .viewrecipe-ingredients p, .viewrecipe-directions p {
+	margin-top: 0px;
+}
+
+.viewrecipe-button {
+	margin-top: 35px;
+}
+
+
+/*
+	SUBMIT ASSIGNMENT STYLES
+*/
+.submit-div {
+	margin-left: 160px;
+	margin-top: 60px;
+	width: 330px;
+}
+
+.submit-div .leftitem {
+	display: inline-block;
+	width: 85px;
+}
+
+.submit-div .rightitem{
+	display: inline-block;
+	width: 180px;
+}
+
+.submit-div input {
+	width: 100%;
+}
+
+.submit-div a {
+	position: relative;
+	left: 119px;
+}
+
+/*
+    EXTRA STUFF
+*/
+::-webkit-input-placeholder { /* WebKit browsers */
+    color:    #bebaba;
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+    color:    #bebaba;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+    color:    #bebaba;
+}
+:-ms-input-placeholder { /* Internet Explorer 10+ */
+    color:    #bebaba;
+}
+
+
+#saveSettings {
+    margin-left:25%;
+    width:150px;
+    display:block;
+    text-align:center;
+}
+
+h3 {
+    font-size: 1.755em;
+}
+
